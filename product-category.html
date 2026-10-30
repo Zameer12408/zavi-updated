@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from https://zavi-updated.netlify.app/product-category by HTTrack Website Copier/3.x [XR&CO], Tue, 06 Oct 2026 03:21:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=19d62839-c948-4829-bd94-6c0ad262d2eb
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ZaviExito Global Trade</title>
+
+    <link rel="shortcut icon" href="images/fav/favicon_io/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/fav/favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/tooplate-moso-interior.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-lg">
+    <div class="container">
+      <div class="col-lg-3 col-md-5 col-sm-12 mx-lg-auto">
+        <a href='index.html'><img src="images/slideshow/logo/final-logo.png" class=" img-fluid" style=" height: 4rem;"
+            alt="" /></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class='nav-link click-scroll' href='index.html'>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class='nav-link click-scroll' href='product-category.html'>Products</a>
+          </li>
+          <li class="nav-item">
+            <a class='nav-link click-scroll' href='about.html'>About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class='nav-link click-scroll' href='contact.html'>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <main class="mb-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class=" mb-4 category-container">
+                    <div class="category-item">
+                        <h5 onclick="remocelocal()"  class="mt-2">All</h5>
+                    </div>
+                    <div class="category-item">
+                        <h5 onclick="showProducts('jewellery')" id="jewellery-category" class="mt-2 ">Jewellery</h5>
+                    </div>
+                    <div class="category-item">
+                        <h5 onclick="showProducts('handicraft')" id="handicraft-category" class="mt-2 ">Handicraft</h5>
+                    </div>
+                    <div class="category-item">
+                        <h5 onclick="showProducts('carpets')" id="carpets-category" class="mt-2 ">Carpets & Rugs</h5>
+                    </div>
+                    <div class="category-item">
+                        <h5 onclick="showProducts('footwear')" id="footwear-category" class="mt-2 ">Xito Footwears</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="product-section" class="mt-5">
+                <div class="row" id="products"></div>
+            </div>
+        </div>
+
+        <script>
+            function remocelocal(){
+                localStorage.clear();
+                window.location.reload();
+            }
+            const allProductData = {
+                jewellery: [
+                    { img: "images/jewellary-1/1.jpeg" },
+                    { img: "images/jewellary-1/2.jpeg" },
+                    { img: "images/jewellary-1/3.jpeg" },
+                    { img: "images/jewellary-1/4.jpeg" },
+                    { img: "images/jewellary-1/5.jpeg" },
+                    { img: "images/jewellary-1/6.jpeg" },
+                    { img: "images/jewellary-1/7.jpeg" },
+                    { img: "images/jewellary-1/8.jpeg" },
+                    { img: "images/jewellary-1/9.jpeg" },
+                    { img: "images/jewellary-1/10.jpeg" },
+                    { img: "images/jewellary-1/11.jpeg" },
+                    { img: "images/jewellary-1/12.jpeg" },
+                    { img: "images/jewellary-1/13.jpeg" },
+                    { img: "images/jewellary-1/14.jpeg" },
+                    { img: "images/jewellary-1/15.jpeg" },
+                    { img: "images/jewellary-1/16.jpeg" },
+                   
+                ],
+                handicraft: [
+                    { img: "images/img/1.jpeg" },
+                    { img: "images/img/27.jpeg" },
+                    { img: "images/img/23.jpeg" },
+                    { img: "images/img/4.jpeg" },
+                    { img: "images/img/5.jpeg" },
+                    { img: "images/img/6.jpeg" },
+                    { img: "images/img/7.jpeg" },
+                    { img: "images/img/18.jpeg" },
+                    { img: "images/img/9.jpeg" },
+                    { img: "images/img/10.jpeg" },
+                    { img: "images/img/11.jpeg" },
+                    { img: "images/img/22.jpeg" },
+                    { img: "images/img/21.jpeg" },
+                    { img: "images/img/14.jpeg" },
+                    { img: "images/img/15.jpeg" },
+                    { img: "images/img/16.jpeg" },
+
+                ],
+                carpets: [
+                    { img: "images/carpet-1/1.jpeg" },
+                    { img: "images/carpet-1/2.jpeg"},
+                    { img: "images/carpet-1/3.jpeg"},
+                    { img: "images/carpet-1/4.jpeg"},
+                    { img: "images/carpet-1/5.jpeg"},
+                    { img: "images/carpet-1/6.jpeg"},
+                    { img: "images/carpet-1/7.jpeg" },
+                    { img: "images/carpet-1/8.jpeg"},
+                    { img: "images/carpet-1/9.jpeg"},
+                    { img: "images/carpet-1/10.jpeg"},
+                    { img: "images/carpet-1/11.jpeg"},
+                    { img: "images/carpet-1/12.jpeg"},
+                    { img: "images/carpet-1/13.jpeg" },
+                    { img: "images/carpet-1/14.jpeg"},
+                    { img: "images/carpet-1/15.jpeg"},
+                    { img: "images/carpet-1/16.jpeg"},
+                ],
+                footwear:[
+                  {img:"images/xitoFootwear/1.jpeg"},
+                  {img:"images/xitoFootwear/2.jpeg"},
+                  {img:"images/xitoFootwear/3.jpeg"},
+                  {img:"images/xitoFootwear/4.jpeg"},
+                  {img:"images/xitoFootwear/5.jpeg"},
+                  {img:"images/xitoFootwear/6.jpeg"},
+                  {img:"images/xitoFootwear/7.jpeg"},
+                ]
+            };
+            
+            function showProducts(categoryName) {
+                const productsArray = allProductData[categoryName];
+                const productContainer = document.getElementById("products");
+                productContainer.innerHTML = ""; 
+
+                // Clear active state from all category headings
+                const categoryHeadings = document.querySelectorAll('.category-item h5');
+                categoryHeadings.forEach(h => h.classList.remove('active-category'));
+
+                // Add active state to the clicked category heading
+                const activeHeading = document.getElementById(categoryName + '-category');
+                if (activeHeading) {
+                    activeHeading.classList.add('active-category');
+                }
+
+                // Store the active category in localStorage
+                localStorage.setItem('activeCategory', categoryName);
+
+                productsArray.forEach(p => {
+                    productContainer.innerHTML += `
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="shop-thumb card">
+                  <div class="shop-image-wrap fixed-img">
+
+                    <img src="${p.img}" class="shop-image img-fluid" alt="" />
+
+                  </div>
+                  <div class="shop-body " id="product-1">
+                    <a href="#" onclick="redirectToWhatsApp('Product Name', 49.99)" class="mb-3 btn-dark w-100 btn">Buy
+                      Now</a>
+                  </div>
+                </div>
+              </div>
+                    `;
+                });
+            }
+
+            // On page load, check for a saved category in localStorage
+            document.addEventListener("DOMContentLoaded", function () {
+                const savedCategory = localStorage.getItem('activeCategory');
+                if (savedCategory && allProductData[savedCategory]) {
+                    showProducts(savedCategory);
+                } else {
+                    // Default to showing all products if no category is saved
+                    const allProducts = Object.values(allProductData).flat();
+                    showAllProducts(allProducts);
+                }
+            });
+
+            // Helper function to display all products at once
+            function showAllProducts(productsArray) {
+                const productContainer = document.getElementById("products");
+                productContainer.innerHTML = "";
+                productsArray.forEach(p => {
+                    productContainer.innerHTML += `
+                         <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="shop-thumb card">
+                  <div class="shop-image-wrap fixed-img">
+
+                    <img src="${p.img}" class="shop-image img-fluid" alt="" />
+
+                  </div>
+                  <div class="shop-body " id="product-1">
+                    <a href="#" onclick="redirectToWhatsApp('Product Name', 49.99)" class="mb-3 btn-dark w-100 btn">Buy
+                      Now</a>
+                  </div>
+                </div>
+              </div>
+                    `;
+                });
+            }
+        </script>
+    </main>
+  <footer class="site-footer section-padding">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-3 col-12 ms-lg-auto mt-5">
+          <a href='index.html'><h3 class="text-white mb-3">ZaviExito Global Trade</h3></a>
+
+          <p class="text-white mt-2">
+            ZaviExito Global Trade brings you beautifully designed marble and stone products for modern homes. Our
+            collections include urli bowls, trays, bathroom sets, and unique decor pieces, all carefully handcrafted by
+            skilled artisans.
+          </p>
+        </div>
+
+
+        <div class="col-lg-3 col-md-3 col-12 ms-lg-auto mt-5">
+          <h3 class="text-white mb-3">Important Links</h3>
+          <ul>
+            <li class="list-group"><a class='text-white' href='index.html'>Home</a></li>
+            <li class="list-group"><a class='text-white' href='about.html'>About</a></li>
+            <li class="list-group"><a class='text-white' href='contact.html'>Contact</a></li>
+            <li class="list-group"><a class='text-white' href='shop-listing.html'>Our Products</a></li>
+          </ul>
+        </div>
+
+
+
+
+        <div class="col-lg-3 col-md-3 col-12 ms-lg-auto mt-5">
+          <h3 class="text-white mb-3">Address</h3>
+
+          <p class="text-white mt-2">
+            <i class="bi-geo-alt"></i>
+            Plot-71, Motikunj, Loha Mandi, Agra, Uttar Pradesh, India
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 mt-5">
+          <h3 class="text-white mb-3">Contact Info</h3>
+
+          <p class="text-white mb-1">
+            <i class="bi-telephone me-1"></i>
+
+            <a href="tel:+91 9911994328" class="text-white">+91 9911994328 </a>
+          </p>
+
+          <p class="text-white mb-0">
+            <i class="bi-envelope me-1"></i>
+
+            <a href="mailto:info@zaviexito.com" class="text-white">
+              info@zaviexito.com
+            </a>
+          </p>
+          <ul class="social-icon">
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link social-icon-twitter bi-twitter"></a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link social-icon-facebook bi-facebook"></a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link social-icon-instagram bi-instagram"></a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link social-icon-pinterest bi-pinterest"></a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link social-icon-whatsapp bi-whatsapp"></a>
+              </li>
+            </ul>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-7 copyright-text-wrap col-12 d-flex flex-wrap align-items-center justify-content-center ms-auto">
+            <p class="copyright-text mb-0 me-4">
+             <span>Copyright © ZaviExito Global Trade 2024</span><br>
+             Designed by <a href="https://www.digitalexportsmarketing.com/">Innodem pvt ltd.</a >
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/click-scroll.html"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+
+<!-- Mirrored from https://zavi-updated.netlify.app/product-category by HTTrack Website Copier/3.x [XR&CO], Tue, 06 Oct 2026 03:21:38 GMT -->
+</html>
